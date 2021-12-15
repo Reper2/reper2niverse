@@ -1,3 +1,3 @@
 # Reper2niverse
 My Discord server's website.<br><br>
-<img src="icon.gif" style="display: flex; align-self: flex-end; border-radius: 50%">
+<img src="icon.gif" style="border-radius: 50%">
