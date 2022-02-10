@@ -1,96 +1,248 @@
 <head>
-  	<title>Reper2niverse</title>
-  	<meta charset="UTF-8">
-  	<link href="assets/css/site.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/iconkit.css" rel="stylesheet" type="text/css">
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-1MM0E339JK"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+	<title>Reper2niverse</title>
+	<meta charset="UTF-8">
+	<link href="assets/css/site.css" rel="stylesheet" type="text/css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1MM0E339JK"></script>
+  <script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
 
-	  gtag('config', 'G-1MM0E339JK');
-	</script>
-  	<link rel="icon" href="icon.gif">
-	<meta id="meta-title" property="og:title" content="Reper2niverse">
-  	<meta id="meta-desc" property="og:description" content="Reper2niverse Discord server's website!">
-  	<meta id="meta-image" name="og:image" itemprop="image" content="https://reper2.github.io/reper2niverse/icon.gif">
-	<meta name="theme-color" content="#14d8ee">
-  	<meta property="twitter:card" content="summary_large_image">
+	gtag('config', 'G-1MM0E339JK');
+  </script>
+	<link rel="shortcut icon" href="icon.gif">
+  <meta id="meta-title" property="og:title" content="Reper2niverse">
+	<meta id="meta-desc" property="og:description" content="Here you can download Reper2niverse's Discord server files! Reper2niverse: For people interested in coding and gaming. Here you can receive notifications on new software releases made by Reper2.">
+	<meta id="meta-image" name="og:image" itemprop="image" content="https://reper2.github.io/reper2niverse/icon.gif">
+  <meta name="theme-color" content="#14d8ee">
+	<meta property="twitter:card" content="summary_large_image">
 </head>
 
 <body class="darkBG" onbeforeunload="saveUrl()">
 
-<div id="everything">
-	
-	<div style="position:absolute; bottom: 0%; left: 0%; width: 100%; pointer-events: none">
-		<img class="cornerPiece weekly" src="assets/corner.png" width="7%;">
-	</div>
-	
-	<div style="position:absolute; top: 0%; left: 0%; width: 100%; pointer-events: none; text-align: left;">
-		<img class="cornerPiece weekly" src="assets/corner.png" width="7%;" style="transform: scaleX(1) scaleY(-1)">
-	</div>
-	
-	<div style="position:absolute; top: 0%; right: 0%; width: 100%; pointer-events: none; text-align: right;">
-		<img class="cornerPiece weekly" src="assets/corner.png" width="7%;" style="transform: scaleX(-1) scaleY(-1)">
-	</div>
-	
-	<div style="position:absolute; bottom: 0%; right: 0%; width: 100%; text-align: right;">
-		<img class="cornerPiece weekly" src="assets/corner.png" width="7%;" style="transform: scaleX(-1)">
-	</div>
-	
-	<div class="center supercenter" style="width: 135vh; height: 82%; margin-top: -0.7%">
-		<div class="center" width="100%" style="margin-top: 2%">
-			<h2>Reper2niverse</h2>
-		</div>
-			
-		<div id="iconbox" style="min-height: 145px; display: inline-flex">
-			<img id="result" src="icon.gif" class="help" title="Reper2niverse" width="145" height="145" style="display: flex; align-self: flex-end; border-radius: 50%">
-		</div>
-		
-		<hr id="gdfloor" style="margin-top: 0px;">
-		
-		<div id="iconKitParent" class="iconKit noDarken">
-			<div id="iconprogressbar">
-				<div id="iconloading" style="width: 100%;"></div>
-			</div>
-			
-			<div id="iconprogressbar">
-					<div id="iconloading" style="width: 100%;"></div>
-			</div><div id="cubes">
-				<div class="center" style="margin: 2% auto; width: 118.125vh">
-					<h1>
-						<a target="_blank" href="audit-log.json">Audit Log</a>
-						<br>
-						<a target="_blank" href="bans.json">Bans</a>
-						<br>
-						<a target="_blank" href="channels.json">Channels</a>
-						<br>
-						<a target="_blank" href="emoji.json">Emoji <cg>[JSON]</cg></a>
-						<br>
-						<a target="_blank" href="emoji.zip">Emoji <cg>[Zip]</cg></a>
-						<br>
-						<a target="_blank" href="guild.json">Guild</a>
-						<br>
-						<a target="_blank" href="icon.gif">Icon</a>
-						<br>
-						<a target="_blank" href="https://discord.gg/aaVjjZtQts">Invite</a>
-						<br>
-						<a target="_blank" href="https://discord.new/KUHBFybPyV36">Server template</a>
-						<br>
-						<a target="_blank" href="webhooks.json">Webhooks <cg>[JSON]</cg></a>
-						<br>
-						<a target="_blank" href="webhooks.json">Webhooks <cg>[Zip]</cg></a>
-						<br>
-						<a target="_blank" href="https://discord.com/widget?id=771861170256085023&theme=dark">Widget</a>
-					</h1>
-				</div>
-			</div>
-		</div>
-	</div>
+<div id="everything" style="overflow: auto;">
+
+  <div class="popup" id="infoDiv" style="display: none;">
+	  <div class="fancybox bounce center supercenter" style="width: 80vh">
+		  <h2 class="smaller center" style="font-size: 5.5vh">Reper2niverse Info</h2>
+		  <p class="bigger center" id="infoText" style="line-height: 5vh; margin-top: 1.5vh">For people interested in coding and gaming. Here you can receive notifications on new software releases made by Reper2.</p>
+		  <img src="assets/ok.png" width="20%;" class="gdButton center" onclick="$('.popup').hide()" tabindex="0">
+	  </div>
+  </div>
+  
+  <div id="searchBox" class="supercenter dragscroll" ;="" style="width: 127vh">
+	  <div style="height: 4.5%"></div>
+		  <div class="searchresult" style="height: 19%; padding-top: 1.2%">
+			  <h1 class="lessspaced blue" style="color: white">Audit-Log</h1>
+			  <br><br>
+	  
+			  <div class="center" style="position:absolute; height: 10%; width: 12.5%; left: 3%; transform:translateY(-160%)">
+				  <a target="_blank" href="audit-log.json"><img class="gdButton spaced gdpslogo" src="assets/discord.png" height="130%"></a>
+			  </div>
+			  
+			  <div class="center" style="position:absolute; right: 7%; transform:translateY(-150%); height: 10%">
+				  <a onclick="downloadFile('audit-log.json')"><img style="margin-bottom: 4.5%" class="valign gdButton" src="assets/download.png" height="105%"></a>
+			  </div>
+		  </div>
+
+		  <div class="searchresult" style="height: 19%; padding-top: 1.2%">
+			  <h1 class="lessspaced blue" style="color: white">Bans</h1>
+			  <br><br>
+	  
+			  <div class="center" style="position:absolute; height: 10%; width: 12.5%; left: 3%; transform:translateY(-160%)">
+				  <a target="_blank" href="bans.json"><img class="gdButton spaced gdpslogo" src="assets/discord.png" height="130%"></a>
+			  </div>
+			  
+			  <div class="center" style="position:absolute; right: 7%; transform:translateY(-150%); height: 10%">
+				  <a onclick="downloadFile('bans.json')"><img style="margin-bottom: 4.5%" class="valign gdButton" src="assets/download.png" height="105%"></a>
+			  </div>
+		  </div>
+
+		  <div class="searchresult" style="height: 19%; padding-top: 1.2%">
+			  <h1 class="lessspaced blue" style="color: white">Channels</h1>
+			  <br><br>
+	  
+			  <div class="center" style="position:absolute; height: 10%; width: 12.5%; left: 3%; transform:translateY(-160%)">
+				  <a target="_blank" href="channels.json"><img class="gdButton spaced gdpslogo" src="assets/discord.png" height="130%"></a>
+			  </div>
+			  
+			  <div class="center" style="position:absolute; right: 7%; transform:translateY(-150%); height: 10%">
+				  <a onclick="downloadFile('channels.json')"><img style="margin-bottom: 4.5%" class="valign gdButton" src="assets/download.png" height="105%"></a>
+			  </div>
+		  </div>
+
+		  <div class="searchresult" style="height: 19%; padding-top: 1.2%">
+			  <h1 class="lessspaced blue" style="color: white">Emoji</h1>
+			  <br><br>
+	  
+			  <div class="center" style="position:absolute; height: 10%; width: 12.5%; left: 3%; transform:translateY(-160%)">
+				  <a target="_blank" href="emoji.json"><img class="gdButton spaced gdpslogo" src="assets/discord.png" height="130%"></a>
+			  </div>
+			  
+			  <div class="center" style="position:absolute; right: 7%; transform:translateY(-150%); height: 10%">
+				  <a onclick="downloadFile('emoji.json')"><img style="margin-bottom: 4.5%" class="valign gdButton" src="assets/download.png" height="105%"></a>
+			  </div>
+		  </div>
+
+		  <div class="searchresult" style="height: 19%; padding-top: 1.2%">
+			  <h1 class="lessspaced blue" style="color: white">Emoji</h1>
+			  <h2 class="lessSpaced smaller inline gdButton"><cg>[zip]</cg></h2>
+	  
+			  <div class="center" style="position:absolute; height: 10%; width: 12.5%; left: 3%; transform:translateY(-160%)">
+				  <img class="gdButton spaced gdpslogo" src="assets/discord.png" height="130%">
+			  </div>
+			  
+			  <div class="center" style="position:absolute; right: 7%; transform:translateY(-150%); height: 10%">
+				  <a onclick="downloadFile('emoji.zip')"><img style="margin-bottom: 4.5%" class="valign gdButton" src="assets/download.png" height="105%"></a>
+			  </div>
+		  </div>
+
+		  <div class="searchresult" style="height: 19%; padding-top: 1.2%">
+			  <h1 class="lessspaced blue" style="color: white">Guild</h1>
+			  <br><br>
+	  
+			  <div class="center" style="position:absolute; height: 10%; width: 12.5%; left: 3%; transform:translateY(-160%)">
+				  <a target="_blank" href="guild.json"><img class="gdButton spaced gdpslogo" src="assets/discord.png" height="130%"></a>
+			  </div>
+			  
+			  <div class="center" style="position:absolute; right: 7%; transform:translateY(-150%); height: 10%">
+				  <a onclick="downloadFile('guild.json')"><img style="margin-bottom: 4.5%" class="valign gdButton" src="assets/download.png" height="105%"></a>
+			  </div>
+		  </div>
+
+		  <div class="searchresult" style="height: 19%; padding-top: 1.2%">
+			  <h1 class="lessspaced blue" style="color: white">Icon</h1>
+			  <br><br>
+	  
+			  <div class="center" style="position:absolute; height: 10%; width: 12.5%; left: 3%; transform:translateY(-160%)">
+				  <a target="_blank" href="icon.gif"><img class="gdButton spaced gdpslogo" src="icon.gif" height="130%"></a>
+			  </div>
+			  
+			  <div class="center" style="position:absolute; right: 7%; transform:translateY(-150%); height: 10%">
+				  <a onclick="downloadFile('icon.gif')"><img style="margin-bottom: 4.5%" class="valign gdButton" src="assets/download.png" height="105%"></a>
+			  </div>
+		  </div>
+
+		  <div class="searchresult" style="height: 19%; padding-top: 1.2%">
+			  <h1 class="lessspaced blue" style="color: white">Splash</h1>
+			  <br><br>
+	  
+			  <div class="center" style="position:absolute; height: 10%; width: 12.5%; left: 3%; transform:translateY(-160%)">
+				  <a target="_blank" href="splash.png"><img class="gdButton spaced gdpslogo" src="splash.png" height="130%"></a>
+			  </div>
+			  
+			  <div class="center" style="position:absolute; right: 7%; transform:translateY(-150%); height: 10%">
+				  <a onclick="downloadFile('splash.png')"><img style="margin-bottom: 4.5%" class="valign gdButton" src="assets/download.png" height="105%"></a>
+			  </div>
+		  </div>
+
+		  <div class="searchresult" style="height: 19%; padding-top: 1.2%">
+			  <h1 class="lessspaced blue" style="color: white">Webhooks</h1>
+			  <br><br>
+	  
+			  <div class="center" style="position:absolute; height: 10%; width: 12.5%; left: 3%; transform:translateY(-160%)">
+				  <a target="_blank" href="webhooks.json"><img class="gdButton spaced gdpslogo" src="assets/discord.png" height="130%"></a>
+			  </div>
+			  
+			  <div class="center" style="position:absolute; right: 7%; transform:translateY(-150%); height: 10%">
+				  <a onclick="downloadFile('webhooks.json')"><img style="margin-bottom: 4.5%" class="valign gdButton" src="assets/download.png" height="105%"></a>
+			  </div>
+		  </div>
+
+		  <div class="searchresult" style="height: 19%; padding-top: 1.2%">
+			  <h1 class="lessspaced blue" style="color: white">Webhooks</h1>
+			  <h2 class="lessSpaced smaller inline gdButton"><cg>[zip]</cg></h2>
+	  
+			  <div class="center" style="position:absolute; height: 10%; width: 12.5%; left: 3%; transform:translateY(-160%)">
+				  <img class="gdButton spaced gdpslogo" src="assets/discord.png" height="130%">
+			  </div>
+			  
+			  <div class="center" style="position:absolute; right: 7%; transform:translateY(-150%); height: 10%">
+				  <a onclick="downloadFile('webhooks.zip')"><img style="margin-bottom: 4.5%" class="valign gdButton" src="assets/download.png" height="105%"></a>
+			  </div>
+		  </div>
+
+		  <div class="searchresult" style="height: 19%; padding-top: 1.2%">
+			  <h1 class="lessspaced blue" style="color: white">Widget</h1>
+			  <br><br>
+	  
+			  <div class="center" style="position:absolute; height: 10%; width: 12.5%; left: 3%; transform:translateY(-160%)">
+				  <img class="gdButton spaced gdpslogo" src="assets/discord.png" height="130%">
+			  </div>
+			  
+			  <div class="center" style="position:absolute; right: 7%; transform:translateY(-150%); height: 10%">
+				  <a target="_blank" href="https://discord.com/widget?id=771861170256085023&theme=dark"><img style="margin-bottom: 4.5%" class="valign gdButton" src="assets/view.png" height="105%"></a>
+			  </div>
+		  </div>
+		  <br>
+	  </div>
+  </div>
+  
+  <div class="epicbox supercenter gs" style="width: 126vh; height: 80%; pointer-events: none"></div>
+  
+  <div style="position:absolute; bottom: 0%; left: 0%; width: 100%; pointer-events: none">
+	  <img class="cornerPiece weekly" src="assets/corner.png" width="7%;">
+  </div>
+  
+  <div style="position:absolute; top: 0%; left: 0%; width: 100%; pointer-events: none; text-align: left;">
+	  <img class="cornerPiece weekly" src="assets/corner.png" width="7%;" style="transform: scaleX(1) scaleY(-1)">
+  </div>
+  
+  <div style="position:absolute; top: 0%; right: 0%; width: 100%; pointer-events: none; text-align: right;">
+	  <img class="cornerPiece weekly" src="assets/corner.png" width="7%;" style="transform: scaleX(-1) scaleY(-1)">
+  </div>
+  
+  <div style="position:absolute; bottom: 0%; right: 0%; width: 100%; text-align: right;">
+	  <img class="cornerPiece weekly" src="assets/corner.png" width="7%;" style="transform: scaleX(-1)">
+  </div>
+  
+  <div class="center" style="position:absolute; top: 8%; left: 0%; right: 0%">
+	  <h1 class="pre" id="header"><a onclick="downloadFile('index.html')">Reper2niverse</a></h1>
+  </div>
+  
+  <div style="position:absolute; bottom: 2%; right: 1%; text-align: right; width: 15%;">
+	  <a onclick="window.location.reload()"><img class="gdButton" title="Refresh" src="assets/refresh.png" width="40%"></a>
+  </div>
+  
+  <div style="position:absolute; top: 2.5%; right: 2%; width: 10%; text-align: right;">
+	  <img class="gdButton" src="assets/smallinfo.png" width="32%" onclick="$('#infoDiv').show()">
+  </div>
+  
+  <div style="position: absolute; top: 12%; right: 1.5%; width: 21%; text-align: right;">
+	  <a target="_blank" title="Reper2niverse Discord!" href="https://discord.gg/aaVjjZtQts"><img class="gdButton" src="assets/discord.png" width="20%"></a>
+  </div>
+  
+  <div style="position: absolute; top: 22%; right: 1.5%; width: 21%; text-align: right;">
+	  <a target="_blank" title="Reper2 [GD] YouTube!" href="https://www.youtube.com/channel/UCofCDfLjs_TkiC-p0-k_9XA"><img class="gdButton" src="assets/youtube.png" width="20%"></a>
+  </div>
+  
+  <div style="position: absolute; top: 32%; right: 1.5%; width: 21%; text-align: right;">
+	  <a target="_blank" title="Reper2 GitHub!" href="https://github.com/Reper2"><img class="gdButton" src="assets/github.png" width="20%"></a>
+  </div>
+
+  <div style="position: absolute; top: 42%; right: 1.5%; width: 21%; text-align: right;">
+	  <a target="_blank" title="Reper2_dev Twitch!" href="https://www.twitch.tv/reper2_dev"><img class="gdButton" src="assets/twitch.png" width="20%"></a>
+  </div>
+
+  <div style="position: absolute; top: 12%; left: 1.5%; width: 21%; text-align: left;">
+	  <a target="_blank" title="Join Reper2niverse!" href="https://discord.gg/aaVjjZtQts"><img class="gdButton" src="icon.gif" width="50%" style="border-radius: 50%;"></a>
+  </div>
+
+  <div style="position:absolute; bottom: 2%; left: 1%; text-align: left; width: 15%;">
+	  <a target="_blank" title="Create a new server using this server's template!" href="https://discord.new/KUHBFybPyV36"><img class="gdButton" src="assets/plus.png" width="40%" style="border-radius: 50%;"></a>
+  </div>
+
+  <!--<div style="position: absolute; left: 7%; top: 45%; height: 10%;">
+	  <img class="gdButton" id="pageDown" style="display: none"; src="assets/arrow-left.png" height="90%">
+  </div>
+
+  <div style="position: absolute; right: 7%; top: 45%; height: 10%;">
+	  <img class="gdButton" id="pageUp" style="display: none"; src="assets/arrow-right.png" height="90%">
+  </div>-->
 </div>
 
 </body>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="scripts/sizecheck.js"></script>
 <script type="text/javascript" src="scripts/dragscroll.js"></script>
+<script type="text/javascript" src="scripts/download.js"></script>
