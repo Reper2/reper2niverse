@@ -1,0 +1,44 @@
+body {
+    background-color: #171717;
+}
+
+h1, h2, p {
+    font-family: Ginto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: white;
+}
+
+p {
+    font-size: 5vh;
+}
+
+#widget {
+    left: 1%;
+    bottom: 10%;
+    overflow: auto;
+    position: absolute;
+}
+
+.main {
+    display: inline-block;
+    position: absolute;
+    left: 20%;
+    text-align: center;
+}
+
+button {
+    background-color: #38d1fc;
+    outline-color: initial;
+    border-radius: 3vh;
+    color: white;
+    font-size: 5vh;
+    block-size: 12vh;
+}
+
+button:hover {
+    transform: translateY(-1vh);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
