@@ -32,11 +32,13 @@ $(window).resize(function () {
 	if (window.innerHeight > window.innerWidth - 75) { 
 		$('#everything').hide(); 
 		$('#tooSmall').show();
+		console.log('Page has been set to portrait mode.');
 	}
 
 	else { 
 		$('#everything').show(); 
 		$('#tooSmall').hide() 
+		console.log('Page has been set to landscape mode.');
 	}
 });
 
