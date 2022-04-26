@@ -8,14 +8,12 @@ h1, h2, p {
 }
 
 p {
-    font-size: 5vh;
+    font-size: 5vmin;
 }
 
 #widget {
-    left: 1%;
-    bottom: 10%;
     overflow: auto;
-    position: absolute;
+    position: fixed;
 }
 
 .main {
@@ -28,14 +26,14 @@ p {
 button {
     background-color: #38d1fc;
     outline-color: initial;
-    border-radius: 3vh;
+    border-radius: 3vmin;
     color: white;
-    font-size: 5vh;
-    block-size: 12vh;
+    font-size: 5vmin;
+    block-size: 12vmin;
 }
 
 button:hover {
-    transform: translateY(-1vh);
+    transform: translateY(-1vmin);
 }
 
 a {
@@ -46,4 +44,8 @@ a {
 #everything {
     width: 100%;
     height: 100%;
+}
+
+#alternate_font-size {
+    font-size: 2.5vmin !important;
 }

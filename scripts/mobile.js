@@ -4,9 +4,10 @@ $('body').append(`
 		<h1>Reper2niverse</h1>
 		<img src="assets/icon.gif" width="12%" style="border-radius: 50%">
 
-		<p>
-			For people interested in coding and gaming.<br>
-			Here you can be notified on Reper2's<br>
+		<p id="alternate_font-size">
+			A server for people interested in coding and gaming.
+			As well as tech, futuristic and Nintendo stuff.
+			Here you can be notified on Reper2's
 			new software releases and updates.
 		</p>
 
@@ -22,7 +23,7 @@ $('body').append(`
 
 		<br><br>
 
-		<iframe src="https://discord.com/widget?id=771861170256085023&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+		<iframe src="https://discord.com/widget?id=771861170256085023&theme=dark" width="900" height="900" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 	</center>
 </div>
 `)
