@@ -2,7 +2,7 @@ $('body').append(`
 <div data-nosnippet id="tooSmall" style="display: none">
 	<center>
 		<h1>Reper2niverse</h1>
-		<img src="assets/icon.gif" width="12%" style="border-radius: 50%">
+		<img src="logo.gif" width="12%" style="border-radius: 50%">
 
 		<p id="alternate_font-size">
 			A server for people interested in coding and gaming.
